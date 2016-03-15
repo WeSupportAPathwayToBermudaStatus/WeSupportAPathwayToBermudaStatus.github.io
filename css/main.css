@@ -1,0 +1,268 @@
+@import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+/* Main */
+
+html,
+body,
+ {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    font-size: 18px !important;
+}
+
+body {
+	margin-bottom: 90px;	
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {   
+    font-family: Ubuntu,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding-top: 1%;
+	text-rendering: optimizeLegibility;
+}
+
+p, span {
+	margin-left: 1%;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.lead {
+    margin-top: 1%;
+    padding-top: 1%;
+    font-size: 2.1rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.label {
+	font-family: Ubuntu,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+@media(max-width:767px) {
+	body,
+	html {
+    	font-size: 15px;
+	}
+}
+
+/* Navegation */
+.navbar {
+	min-height: 60px
+	line-height: 20px;
+}
+
+.navbar-text > .navbar-fixed-top {
+	font-size: 20px;
+}
+
+.navbar-brand > img {
+	vertical-align: top;
+	margin-top: 0;
+}
+
+@media(max-width:767px) {
+	.navbar-toggle .icon-bar:nth-of-type(2) {
+		  top: 1px;
+	}
+
+	.navbar-toggle .icon-bar:nth-of-type(3) {
+	  	top: 2px;
+	}
+
+	.navbar-toggle .icon-bar {
+		  position: relative;
+		  transition: all 500ms ease-in-out;
+	}
+
+	.navbar-toggle.active .icon-bar:nth-of-type(1) {
+		  top: 6px;
+		  transform: rotate(45deg);
+	}
+
+	.navbar-toggle.active .icon-bar:nth-of-type(2) {
+		  background-color: transparent;
+	}
+
+	.navbar-toggle.active .icon-bar:nth-of-type(3) {
+		  top: -6px;
+		  transform: rotate(-45deg);
+	}
+}
+
+/* image */
+img {
+	margin: 0 auto;
+}
+
+/* Homepage Header */	
+
+.intro-header {
+    padding-top: 40px; 
+    padding-bottom: 40px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/intro-bg.jpg) no-repeat 100%;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 15%;
+    padding-bottom: 10%;
+}
+
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.9);
+    font-size: 5em;
+}
+
+a.intro-message {
+	color: #f8f8f8 !important; 
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+	.intro-header {
+	    padding-top: 20px; 
+	    padding-bottom: 20px;
+	    text-align: center;
+	    color: #f8f8f8;
+	    background: url(../img/intro-portrait-bg.jpg) no-repeat 100%;
+	    background-size: cover;
+	}
+
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+/* Events page Header */	
+.event-header {
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/candlelight-vigil.jpg) no-repeat 100%;
+    background-size: cover;
+}
+
+.event-message {
+    position: relative;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.event-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.9);
+    font-size: 5em;
+}
+
+@media(max-width:767px) {
+    .event-message {
+        padding-bottom: 15%;
+    }
+
+    .event-message > h1 {
+        font-size: 3em;
+    }
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+/* Homepage blockquote */	
+
+.blockquote-style {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5rem 10px;
+  padding: 0.5rem 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.blockquote-style:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4rem;
+  line-height: 0.1rem;
+  margin-right: 0.25rem;
+  vertical-align: -0.4rem;
+}
+
+.blockquote-style:after {
+  color: #ccc;
+  content: close-quote;
+  font-size: 4rem;
+  line-height: 0.1rem;
+  margin-right: 0.25rem;
+  vertical-align: -0.4rem;
+}
+
+.blockquote-style p {
+  display: inline;
+}
+
+/* Footer */
+
+footer {
+	height: 40px;
+	bottom: 0;
+}
+
+.footer-social-buttons{
+	color: #777;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6); 
+	font-size: 1.2rem;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+

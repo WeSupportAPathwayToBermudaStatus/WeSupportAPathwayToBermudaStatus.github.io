@@ -1,0 +1,345 @@
+@import url("font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+/* Main */
+
+html,
+body,
+ {
+    max-width: 100%;
+    min-height: 100%;
+    position: relative;
+    font-size: 18px !important;
+}
+
+body {
+	margin-bottom: 90px;	
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {   
+    font-family: Ubuntu,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding-top: 1%;
+	text-rendering: optimizeLegibility;
+}
+
+p, span {
+	margin-left: 1%;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.lead {
+    margin-top: 1%;
+    padding-top: 1%;
+    font-size: 2.1rem;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.label {
+	font-family: Ubuntu,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.bg-primary {
+  background-color: rgba(70, 157, 130, .5);
+  padding: 2%; 
+  border-color: rgba(70, 157, 130, .9);
+}
+
+a {
+  color: rgb(70, 157, 130);
+}
+
+a:hover {
+  color: rgb(70, 157, 130);
+}
+
+a:active {
+  color: rgb(70, 157, 130);
+}
+
+.nounderline {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn-info {
+  background-color: rgb(70, 157, 130);
+}
+
+@media(max-width:767px) {
+	body,
+	html {
+    	font-size: 15px;
+	}
+
+  .lead {
+    font-size: 1.9rem;
+    font-weight: 500;
+    text-align: left;
+  }
+}
+
+/* Navegation */
+.navbar {
+	min-height: 60px
+	line-height: 20px;
+}
+
+.navbar-text > .navbar-fixed-top {
+	font-size: 20px;
+}
+
+.navbar-brand > img {
+	vertical-align: top;
+	margin-top: 0;
+}
+
+@media(max-width:767px) {
+	.navbar-toggle .icon-bar:nth-of-type(2) {
+		  top: 1px;
+	}
+
+	.navbar-toggle .icon-bar:nth-of-type(3) {
+	  	top: 2px;
+	}
+
+	.navbar-toggle .icon-bar {
+		  position: relative;
+		  transition: all 500ms ease-in-out;
+	}
+
+	.navbar-toggle.active .icon-bar:nth-of-type(1) {
+		  top: 6px;
+		  transform: rotate(45deg);
+	}
+
+	.navbar-toggle.active .icon-bar:nth-of-type(2) {
+		  background-color: transparent;
+	}
+
+	.navbar-toggle.active .icon-bar:nth-of-type(3) {
+		  top: -6px;
+		  transform: rotate(-45deg);
+	}
+}
+
+/* image, video & PDF */
+img {
+	margin: 0 auto;
+}
+
+.video {
+  width:560px;
+  height:315px;
+}
+
+.pdf {
+  width:100%;
+  height:950px;
+}
+
+
+
+@media(max-width:767px){
+  .video {
+  width:100%;
+  }
+
+  .pdf {
+  width:340px;
+  height:442px;
+  }
+}
+
+/* Homepage Header */	
+
+.intro-header {
+    padding-top: 40px; 
+    padding-bottom: 40px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/intro-bg.jpg) no-repeat 100%;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 15%;
+    padding-bottom: 10%;
+}
+
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.9);
+    font-size: 5em;
+}
+
+a.intro-message {
+	color: #f8f8f8 !important; 
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+@media(max-width:767px) {
+	.intro-header {
+	    padding-top: 20px; 
+	    padding-bottom: 20px;
+	    text-align: center;
+	    color: #f8f8f8;
+	    background: url(../img/intro-portrait-bg.jpg) no-repeat 100% !important;
+	    background-size: cover;
+	}
+
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+/* Events page Header */	
+.event-header {
+    padding-top: 50px; 
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/candlelight-vigil.jpg) no-repeat 100% !important;
+    background-size: cover;
+}
+
+.event-message {
+    position: relative;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.event-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.9);
+    font-size: 5em;
+}
+
+@media(max-width:767px) {
+    .event-message {
+        padding-bottom: 15%;
+    }
+
+    .event-message > h1 {
+        font-size: 3em;
+    }
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+
+
+/* Footer */
+
+footer {
+	height: 40px;
+	bottom: 0;
+}
+
+.footer-social-buttons{
+	color: #777;
+	text-shadow: 2px 2px 3px rgba(0,0,0,0.6); 
+	font-size: 1.2rem;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+@media(max-width:767px) {
+  .navbar-fixed-bottom {
+    position: relative;
+  }
+}
+
+/* Contact email mobile*/
+@media(max-width:767px) {
+
+  span.contactemail {
+  visibility: hidden;
+  }
+  span.contactemail:before {
+    content:"Email us:";
+    text-align: left;
+    color: #333;
+    visibility:visible;
+  }
+
+  a.contactemail {
+  visibility: hidden;
+  max-width: 100%;
+  overflow:hidden; 
+  }
+
+  a.contactemail:before {
+    content:"pathwaytostatus bermuda@gmail.com";
+    color: rgb(70, 157, 130);
+    visibility:visible;
+  }
+
+  span.jdwmail {
+  visibility: hidden;
+  }
+  span.jdwmail:before {
+    content:"Joan Dillas-Wright:";
+    text-align: left;
+    color: #333;
+    visibility:visible;
+  }
+
+  a.jdwmail {
+  visibility: hidden;
+  }
+  a.jdwmail:before {
+    content:"JDillas-Wright @parliament.bm";
+    text-align: left;
+    color: rgb(70, 157, 130);
+    float:  left;
+    visibility:visible;
+  }

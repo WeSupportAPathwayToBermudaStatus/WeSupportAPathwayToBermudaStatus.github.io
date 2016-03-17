@@ -6,7 +6,7 @@
 html,
 body,
  {
-    max-width: 100%;
+    width: 100%;
     min-height: 100%;
     position: relative;
     font-size: 18px !important;
@@ -50,44 +50,11 @@ p, span {
 	font-family: Ubuntu,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.bg-primary {
-  background-color: rgba(70, 157, 130, .5);
-  padding: 2%; 
-  border-color: rgba(70, 157, 130, .9);
-}
-
-a {
-  color: rgb(70, 157, 130);
-}
-
-a:hover {
-  color: rgb(70, 157, 130);
-}
-
-a:active {
-  color: rgb(70, 157, 130);
-}
-
-.nounderline {
-  text-decoration: none;
-  color: inherit;
-}
-
-.btn-info {
-  background-color: rgb(70, 157, 130);
-}
-
 @media(max-width:767px) {
 	body,
 	html {
     	font-size: 15px;
 	}
-
-  .lead {
-    font-size: 1.9rem;
-    font-weight: 500;
-    text-align: left;
-  }
 }
 
 /* Navegation */
@@ -134,30 +101,9 @@ a:active {
 	}
 }
 
-/* image, video & PDF */
+/* image */
 img {
 	margin: 0 auto;
-}
-
-.video {
-  width:560px;
-  height:315px;
-}
-
-.pdf {
-  width:681px;
-  height:883px;
-}
-
-@media(max-width:767px){
-  .video {
-  width:100%;
-  }
-
-  .pdf {
-  width:340px;
-  height:442px;
-  }
 }
 
 /* Homepage Header */	
@@ -320,54 +266,3 @@ p.copyright {
     margin: 15px 0 0;
 }
 
-@media(max-width:767px) {
-  .navbar-fixed-bottom {
-    position: relative;
-  }
-}
-
-/* Contact email mobile*/
-@media(max-width:767px) {
-
-  span.contactemail {
-  visibility: hidden;
-  }
-  span.contactemail:before {
-    content:"Email us:";
-    text-align: left;
-    color: #333;
-    visibility:visible;
-  }
-
-  a.contactemail {
-  visibility: hidden;
-  max-width: 100%;
-  overflow:hidden; 
-  }
-
-  a.contactemail:before {
-    content:"pathwaytostatus bermuda@gmail.com";
-    color: rgb(70, 157, 130);
-    visibility:visible;
-  }
-
-  span.jdwmail {
-  visibility: hidden;
-  }
-  span.jdwmail:before {
-    content:"Joan Dillas-Wright:";
-    text-align: left;
-    color: #333;
-    visibility:visible;
-  }
-
-  a.jdwmail {
-  visibility: hidden;
-  }
-  a.jdwmail:before {
-    content:"JDillas-Wright @parliament.bm";
-    text-align: left;
-    color: rgb(70, 157, 130);
-    float:  left;
-    visibility:visible;
-  }

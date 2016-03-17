@@ -1,0 +1,54 @@
+---
+layout: default
+title: Site Map
+permalink: /sitemap.html
+pg-order: 99
+---
+<!-- Site Map Page -->
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+	<section id="sitemap" class="container content-section">
+	<br>
+	<h1>Site Map</h1>
+	<ul>
+		<h3>Pages:</h3>
+	    <ul>
+	    {% for page in site.pages %}
+		   	{% if page.layout != nil %}  <!-- To skip pages missing layout-->			
+		    	<li>
+				   <url>
+				   	   	<loc>{{site.url}} {{ page.url | remove: 'index.html' }}</loc>
+				   </url>
+				</li>
+			{% endif %}		   		
+	   	{% endfor %}	  
+		</ul>
+
+	   	<h3>Testimonies</h3>
+	   	<ul>
+	   		{% for post in site.posts %}
+			<li>
+			   <url>
+			   	   	<loc>{{site.url}} {{ post.url | remove: "index.html" }}</loc>
+			   </url>
+			</li>	   
+	   		{% endfor %}
+	   	</ul>
+
+	   	<br>
+	   	<hr class="section-heading-spacer">
+	   	<br>
+	   	<br>
+
+	   	<h4>Information:</h4>
+	   	<ul>
+	   		<li>Last modification: <lastmod>{{ site.time | date: "%y-%m-%d" }}</lastmod></li>
+	   		<li>Frequency: (<changefreq>monthly</changefreq>)</li>
+	   		<li>Priority: <priority>0.8</priority></li>
+	    </ul>
+	</ul>
+    </section>  	
+
+</urlset> 

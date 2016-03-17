@@ -167,7 +167,7 @@ img {
     padding-bottom: 40px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat 100% !important;
+    background: url(../img/intro-bg.jpg) no-repeat 100%;
     background-size: cover;
 }
 
@@ -204,7 +204,7 @@ a.intro-message {
 	    padding-bottom: 20px;
 	    text-align: center;
 	    color: #f8f8f8;
-	    background: url(../img/intro-portrait-bg.jpg) no-repeat 100%;
+	    background: url(../img/intro-portrait-bg.jpg) no-repeat 100% !important;
 	    background-size: cover;
 	}
 
@@ -237,7 +237,7 @@ a.intro-message {
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/candlelight-vigil.jpg) no-repeat 100%;
+    background: url(../img/candlelight-vigil.jpg) no-repeat 100% !important;
     background-size: cover;
 }
 
@@ -271,37 +271,7 @@ a.intro-message {
     border-top: 3px solid #e7e7e7;
 }
 
-/* Homepage blockquote */	
 
-.blockquote-style {
-  background: #f9f9f9;
-  border-left: 10px solid #ccc;
-  margin: 1.5rem 10px;
-  padding: 0.5rem 10px;
-  quotes: "\201C""\201D""\2018""\2019";
-}
-
-.blockquote-style:before {
-  color: #ccc;
-  content: open-quote;
-  font-size: 4rem;
-  line-height: 0.1rem;
-  margin-right: 0.25rem;
-  vertical-align: -0.4rem;
-}
-
-.blockquote-style:after {
-  color: #ccc;
-  content: close-quote;
-  font-size: 4rem;
-  line-height: 0.1rem;
-  margin-right: 0.25rem;
-  vertical-align: -0.4rem;
-}
-
-.blockquote-style p {
-  display: inline;
-}
 
 /* Footer */
 

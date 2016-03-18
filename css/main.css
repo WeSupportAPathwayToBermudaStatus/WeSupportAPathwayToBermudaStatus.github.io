@@ -50,6 +50,15 @@ p, span {
 	font-family: Ubuntu,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.text-inverse {
+    color: #fff;
+    line-height: 150%;
+    vertical-align: middle;
+    background-color: #222;
+    border-color: #080808;
+    padding: 1%;
+}
+
 .bg-primary {
   background-color: rgba(70, 157, 130, .5);
   padding: 2%; 
@@ -169,7 +178,7 @@ img {
     padding-bottom: 40px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat 100%;
+    background: url(../img/intro-bg.jpg) no-repeat 100% !important;
     background-size: cover;
 }
 
@@ -255,6 +264,10 @@ a.intro-message {
 }
 
 @media(max-width:767px) {
+  .event-header {
+      background: url(../img/candlelight-portrait-vigil.jpg) no-repeat 100% !important;
+      background-size: cover;
+  }
     .event-message {
         padding-bottom: 15%;
     }
